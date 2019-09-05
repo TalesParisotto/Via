@@ -105,7 +105,7 @@ body {
     margin: 0 auto;
 }
 
-#inputsTodos{
+.inputs{
     border: 1px solid rgb(158, 157, 157);
     border-radius: 10px 20px;
     padding: 20px;
