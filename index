@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="icon" href="iconViavarejo.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/estilo.css">
+
+    <title>Via Varejo | Sistranfe OPS</title>
+  </head>
+  <body>
+
+    <div class="a"><a href="index.html"><img src="./img/viavarejo.png" alt="Logo Via Varejo"></a></div>
+
+    <div id="check" >
+        <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="todos" onclick="myFunction()"> 
+            <label class="custom-control-label" for="todos">Listar todos</label>
+        </div>
+        <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="chave" onclick="myFunction()">
+            <label class="custom-control-label" for="chave">Listar por chave</label>
+        </div>
+        <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="filtro" onclick="myFunction()">
+            <label class="custom-control-label" for="filtro">listar por filtro</label>
+        </div>
+    </div>
+
+    <div id="inputsTodos" style="display:none">
+        <input type="text" id="text"   />
+        <input type="text" id="text2"  />
+        <input type="text" id="text3"  />
+        <button type="button" class="btn btn-primary">Primary</button>
+    </div>
+
+    <script>
+        function myFunction() {
+            var inputsTodos = document.getElementById("inputsTodos");
+            var todos = document.getElementById("todos");
+            var chave = document.getElementById("chave");
+            var filtro = document.getElementById("filtro");
+            var text = document.getElementById("text");
+            var text2 = document.getElementById("text2");
+            var text3 = document.getElementById("text3");
+
+            var todos,chave,filtro;
+
+            if(chave.checked != true){
+                if(filtro.checked != true){
+                    if (todos.checked == true){
+                        
+                    
+                        inputsTodos.style.display = "block";
+                    }else {
+                        inputsTodos.style.display = "none";
+                        
+                    }
+                }else{
+                    inputsTodos.style.display = "none";
+                }    
+            }else{
+                inputsTodos.style.display = "none";
+            }
+
+            
+        }
+    </script>
+
+    <table class="table table-sm table-striped">
+        <h1 class="row d-flex justify-content-center">Nome da tabela</h1>
+        <caption>Nome da tabela</caption>        
+            <thead class="bg-success text-white">
+            <tr>
+                <th scope="col">CD_ASNELN_IDE</th>
+                <th scope="col">NM_ASNELN_TAB</th>
+                <th scope="col">ST_ASNELN_ENV</th>
+                <th scope="col">ST_ASNELN_STC</th>
+                <th scope="col">ST_ASNELN_EMI</th>
+                <th scope="col">Ações</th>
+              </tr>
+        </thead>
+        <tbody>
+            <tr>                
+                <th >21</th>
+                <td>289129947</td>
+                <td>1</td>
+                <td>1292</td>
+                <td>2019</td>
+                <th scope="row">
+                  <a href="teste2.html"><button type="button" class="btn btnVisualizar btn-warning"><img class="icones" src="./img/procurarBtn.png" alt="Detalhes do campo"></button></a>
+                  <a href="teste3.html"><button type="button" class="btn btnVisualizar btn-warning"><img class="icones" src="./img/editBtn.png" alt="Detalhes do campo"></button></a>
+                </th>
+            </tr>
+            <tr>                
+                <th>285561197</th>
+                <td>PVEMCR</td>
+                <td>L</td>
+                <td>PV</td>
+                <td>2019</td>
+                <th scope="row">
+                    <a href="AUX_STC_NFI_ELN-Visu.html"><button type="button" class="btn btnVisualizar btn-warning"><img class="icones" src="./img/procurarBtn.png" alt="Detalhes do campo"></button></a>
+                    <a href="AUX_STC_NFI_ELN-Edit.html"><button type="button" class="btn btnVisualizar btn-warning"><img class="icones" src="./img/editBtn.png" alt="Detalhes do campo"></button></a>
+                </th>
+            </tr>
+            <tr>                
+                <th>21</th>
+                <td>289129947</td>
+                <td>1</td>
+                <td>@1292</td>
+                <td>2019</td>
+                <th scope="row">
+                    <a href="teste2.html"><button type="button" class="btn btnVisualizar btn-warning"><img class="icones" src="./img/procurarBtn.png" alt="Detalhes do campo"></button></a>
+                    <a href="teste3.html"><button type="button" class="btn btnVisualizar btn-warning"><img class="icones" src="./img/editBtn.png" alt="Detalhes do campo"></button></a>
+                </th>
+            </tr>
+            <tr>                
+                <th>21</th>
+                <td>289129947</td>
+                <td>1</td>
+                <td>@1292</td>
+                <td>2019</td>
+                <th scope="row">
+                    <a href="teste2.html"><button type="button" class="btn btnVisualizar btn-warning"><img class="icones" src="./img/procurarBtn.png" alt="Detalhes do campo"></button></a>
+                    <a href="teste3.html"><button type="button" class="btn btnVisualizar btn-warning"><img class="icones" src="./img/editBtn.png" alt="Detalhes do campo"></button></a>
+                </th>
+            </tr>
+            <tr>                
+                <th>21</th>
+                <td>289129947</td>
+                <td>1</td>
+                <td>@1292</td>
+                <td>2019</td>
+                <th scope="row">
+                    <a href="teste2.html"><button type="button" class="btn btnVisualizar btn-warning"><img class="icones" src="./img/procurarBtn.png" alt="Detalhes do campo"></button></a>
+                    <a href="teste3.html"><button type="button" class="btn btnVisualizar btn-warning"><img class="icones" src="./img/editBtn.png" alt="Detalhes do campo"></button></a>
+                </th>
+            </tr>    
+            <tr>                
+                <th>21</th>
+                <td>289129947</td>
+                <td>1</td>
+                <td>@1292</td>
+                <td>2019</td>
+                <th scope="row">
+                    <a href="teste2.html"><button type="button" class="btn btnVisualizar btn-warning"><img class="icones" src="./img/procurarBtn.png" alt="Detalhes do campo"></button></a>
+                    <a href="teste3.html"><button type="button" class="btn btnVisualizar btn-warning"><img class="icones" src="./img/editBtn.png" alt="Detalhes do campo"></button></a>
+                </th>
+            </tr>
+            <tr>                
+                <th>21</th>
+                <td>289129947</td>
+                <td>1</td>
+                <td>@1292</td>
+                <td>2019</td>
+                <th scope="row">
+                    <a href="teste2.html"><button type="button" class="btn btnVisualizar btn-warning"><img class="icones" src="./img/procurarBtn.png" alt="Detalhes do campo"></button></a>
+                    <a href="teste3.html"><button type="button" class="btn btnVisualizar btn-warning"><img class="icones" src="./img/editBtn.png" alt="Detalhes do campo"></button></a>
+                </th>
+            </tr>        
+        </tbody>
+    </table>
+    
+    <footer>
+        <p>via<b>varejo</b> | Sustentação | Sistranfe OPS</p>
+    </footer>
+      
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
