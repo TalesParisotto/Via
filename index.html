@@ -32,8 +32,25 @@
         </div>
     </div>
 
-    <div id="inputsTodos" style="display:none">
+    <div id="inputsTodos" class="inputs" style="display:none">
         <input type="text" id="text"   />
+        <input type="text" id="text2"  />
+        <input type="text" id="text3"  />
+        <button type="button" class="btn btn-primary">Primary</button>
+    </div>
+
+    <div id="inputsChave" class="inputs" style="display:none">
+        <input type="text" id="text"   />
+        <input type="text" id="text2"  />
+        <input type="text" id="text3"  />
+        <input type="text" id="text3"  />
+        <button type="button" class="btn btn-primary">Primary</button>
+    </div>
+
+    <div id="inputsFiltro" class="inputs" style="display:none">
+        <input type="text" id="text"   />
+        <input type="text" id="text2"  />
+        <input type="text" id="text3"  />
         <input type="text" id="text2"  />
         <input type="text" id="text3"  />
         <button type="button" class="btn btn-primary">Primary</button>
@@ -42,30 +59,52 @@
     <script>
         function myFunction() {
             var inputsTodos = document.getElementById("inputsTodos");
+            var inputsChave = document.getElementById("inputsChave");
+            var inputsFiltro = document.getElementById("inputsFiltro");
             var todos = document.getElementById("todos");
             var chave = document.getElementById("chave");
             var filtro = document.getElementById("filtro");
-            var text = document.getElementById("text");
-            var text2 = document.getElementById("text2");
-            var text3 = document.getElementById("text3");
-
-            var todos,chave,filtro;
 
             if(chave.checked != true){
                 if(filtro.checked != true){
                     if (todos.checked == true){
-                        
-                    
                         inputsTodos.style.display = "block";
                     }else {
                         inputsTodos.style.display = "none";
-                        
                     }
                 }else{
                     inputsTodos.style.display = "none";
                 }    
             }else{
                 inputsTodos.style.display = "none";
+            }
+
+            if(todos.checked != true){
+                if(filtro.checked != true){
+                    if (chave.checked == true){ 
+                        inputsChave.style.display = "block";
+                    }else {
+                        inputsChave.style.display = "none";
+                    }
+                }else{
+                    inputsChave.style.display = "none";
+                }    
+            }else{
+                inputsChave.style.display = "none";
+            }
+
+            if(chave.checked != true){
+                if(todos.checked != true){
+                    if (filtro.checked == true){ 
+                        inputsFiltro.style.display = "block";
+                    }else {
+                        inputsFiltro.style.display = "none";
+                    }
+                }else{
+                    inputsFiltro.style.display = "none";
+                }    
+            }else{
+                inputsFiltro.style.display = "none";
             }
 
             
