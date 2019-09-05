@@ -1,0 +1,115 @@
+.table {
+    max-width: 80%;
+    margin: 0 auto;
+    text-overflow: clip;
+    text-align: center
+}
+
+th, td{
+    max-width: 20%;
+    overflow: hidden;
+}
+
+h1 {
+    color: green;
+}
+
+caption {
+    color: green
+}
+
+#thValor {
+    text-align: center
+}
+
+.tb2 th {
+    text-align: right;
+}
+
+.tb2 td {
+    text-align: left
+}
+
+#escolher {
+    width: 80%;
+    margin: 20px auto;
+}
+
+th button{
+    width: 100%;
+}
+
+tbody th{
+    width: 10%;
+}
+
+.a {
+    height: 100px;
+    margin: 20px auto;
+    display: block;
+    max-width: 20%;
+  }
+
+div img {
+  height: 100px;
+  margin: 20px auto;
+  display: block;
+}
+
+footer {
+    border-top: 1px solid green;
+    border-bottom: 1px solid white;
+    text-align: center;
+    padding-top : 20px;
+    margin: 20px 0 0; 
+    background-color: #ddd;
+    color:green;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.aBtnSecondary {
+    margin: 0 0 0 10% ; 
+}
+
+.aBtnWarning {
+    float: right;
+    margin: 0 10% 0px 0px;
+}
+
+.icones {
+    height: 20px;
+    width: 20px
+}
+
+.btedit  {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.btnVisualizar {
+    width: 45px;
+}
+
+#text {
+    margin: 0 auto;
+}
+#check{
+    border: 1px solid rgb(158, 157, 157);
+    border-radius: 10px 20px;
+    padding: 20px;
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+#inputsTodos{
+    border: 1px solid rgb(158, 157, 157);
+    border-radius: 10px 20px;
+    padding: 20px;
+    max-width: 50%;
+    margin: 0 auto;
+    margin-top: 10px
+}
