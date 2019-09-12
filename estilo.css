@@ -80,6 +80,11 @@ body {
     margin: 0 10% 0px 0px;
 }
 
+.aBtnDanger {
+    float: right;
+    margin: 0 3% 0px 0px;
+}
+
 .icones {
     height: 20px;
     width: 20px
@@ -113,3 +118,15 @@ body {
     margin: 0 auto;
     margin-top: 10px
 }
+
+.campo {
+    border-radius: 5px 10px;
+    margin-left: 30px
+}
+
+
+.custom-control{
+    display: inline;
+    margin: 0px 0 10px 10px
+}
+
