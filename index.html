@@ -10,6 +10,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/estilo.css">
+    <script type="text/javascript" src="auax.js"></script>
 
     <title>Via Varejo | Sistranfe OPS</title>
   </head>
@@ -30,86 +31,42 @@
             <input type="checkbox" class="custom-control-input" id="filtro" onclick="myFunction()">
             <label class="custom-control-label" for="filtro">listar por filtro</label>
         </div>
+        <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="id" onclick="myFunction()">
+            <label class="custom-control-label" for="id">listar por id</label>
+        </div>
+
     </div>
 
     <div id="inputsTodos" class="inputs" style="display:none">
-        <input type="text" id="text"   />
-        <input type="text" id="text2"  />
-        <input type="text" id="text3"  />
-        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-outline-success">Listar todos</button>
     </div>
 
     <div id="inputsChave" class="inputs" style="display:none">
-        <input type="text" id="text"   />
-        <input type="text" id="text2"  />
-        <input type="text" id="text3"  />
-        <input type="text" id="text3"  />
-        <button type="button" class="btn btn-primary">Primary</button>
+        <table>
+            <td><label>CD_ASNELN_IDE<input type="text" id="text" class="campo" /></label></td>
+            <td><label>NM_ASNELN_TAB<input type="text" id="text2" class="campo"/></label></td>
+            <td><label>ST_ASNELN_ENV<input type="text" id="text3" class="campo"/></label></td>
+        </table>
+
+        <button type="button" class="btn btn-outline-success">Listar por chave</button>
     </div>
 
     <div id="inputsFiltro" class="inputs" style="display:none">
-        <input type="text" id="text"   />
-        <input type="text" id="text2"  />
-        <input type="text" id="text3"  />
-        <input type="text" id="text2"  />
-        <input type="text" id="text3"  />
-        <button type="button" class="btn btn-primary">Primary</button>
+        <table>
+            <td><label>CD_ASNELN_IDE<input type="text" id="text" class="campo" /></label></td>
+            <td><label>NM_ASNELN_TAB<input type="text" id="text2" class="campo"/></label></td>
+            <td><label>ST_ASNELN_ENV<input type="text" id="text3" class="campo"/></label></td>
+        </table>
+        <table>
+            <td><label>CD_ASNELN_IDE<input type="text" id="text" class="campo" /></label></td>
+            <td><label>NM_ASNELN_TAB<input type="text" id="text2" class="campo"/></label></td>
+            <td><label>ST_ASNELN_ENV<input type="text" id="text3" class="campo"/></label></td>
+        </table>
+        <button type="button" class="btn btn-outline-success">Listar por filtro</button>
     </div>
 
-    <script>
-        function myFunction() {
-            var inputsTodos = document.getElementById("inputsTodos");
-            var inputsChave = document.getElementById("inputsChave");
-            var inputsFiltro = document.getElementById("inputsFiltro");
-            var todos = document.getElementById("todos");
-            var chave = document.getElementById("chave");
-            var filtro = document.getElementById("filtro");
 
-            if(chave.checked != true){
-                if(filtro.checked != true){
-                    if (todos.checked == true){
-                        inputsTodos.style.display = "block";
-                    }else {
-                        inputsTodos.style.display = "none";
-                    }
-                }else{
-                    inputsTodos.style.display = "none";
-                }    
-            }else{
-                inputsTodos.style.display = "none";
-            }
-
-            if(todos.checked != true){
-                if(filtro.checked != true){
-                    if (chave.checked == true){ 
-                        inputsChave.style.display = "block";
-                    }else {
-                        inputsChave.style.display = "none";
-                    }
-                }else{
-                    inputsChave.style.display = "none";
-                }    
-            }else{
-                inputsChave.style.display = "none";
-            }
-
-            if(chave.checked != true){
-                if(todos.checked != true){
-                    if (filtro.checked == true){ 
-                        inputsFiltro.style.display = "block";
-                    }else {
-                        inputsFiltro.style.display = "none";
-                    }
-                }else{
-                    inputsFiltro.style.display = "none";
-                }    
-            }else{
-                inputsFiltro.style.display = "none";
-            }
-
-            
-        }
-    </script>
 
     <table class="table table-sm table-striped">
         <h1 class="row d-flex justify-content-center">Nome da tabela</h1>
@@ -205,7 +162,7 @@
         </tbody>
     </table>
     
-    <footer>
+    <footer >
         <p>via<b>varejo</b> | Sustentação | Sistranfe OPS</p>
     </footer>
       
